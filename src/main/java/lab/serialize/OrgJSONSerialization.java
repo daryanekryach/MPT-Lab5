@@ -47,6 +47,7 @@ public class OrgJSONSerialization {
         System.out.println("\n=====Org.JSON DESERIALIZATION METRICS=====");
         Metrics.getExecutionTime();
         Metrics.getUsedMemory();
+        System.out.println();
         return tvShows;
     }
 

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="lab.testing.ProductionTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2017-10-22T20:53:41" hostname="Anvym6" time="0.008">
+<testsuite name="lab.testing.ProductionTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2017-10-22T21:31:02" hostname="Anvym6" time="0.006">
   <properties/>
   <testcase name="setDistributor" classname="lab.testing.ProductionTest" time="0.0"/>
   <testcase name="setLocation" classname="lab.testing.ProductionTest" time="0.001"/>
   <testcase name="getLocation" classname="lab.testing.ProductionTest" time="0.0"/>
   <testcase name="setExecutiveProducer" classname="lab.testing.ProductionTest" time="0.0"/>
   <testcase name="getExecutiveProducer" classname="lab.testing.ProductionTest" time="0.0"/>
-  <testcase name="getDistributor" classname="lab.testing.ProductionTest" time="0.0"/>
-  <testcase name="setProducer" classname="lab.testing.ProductionTest" time="0.001"/>
-  <testcase name="getProducer" classname="lab.testing.ProductionTest" time="0.001"/>
+  <testcase name="getDistributor" classname="lab.testing.ProductionTest" time="0.001"/>
+  <testcase name="setProducer" classname="lab.testing.ProductionTest" time="0.0"/>
+  <testcase name="getProducer" classname="lab.testing.ProductionTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

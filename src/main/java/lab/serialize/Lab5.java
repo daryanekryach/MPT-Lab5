@@ -8,7 +8,6 @@ import java.util.ArrayList;
 public class Lab5 {
     public static void main(String[] args)  throws JsonMappingException, JsonGenerationException {
         ArrayList<TVShow> tvShows = createTVShows();
-
         gsonSerialize(tvShows);
         jacksonSerialize(tvShows);
         orgJsonSerialize(tvShows);
@@ -61,18 +60,64 @@ public class Lab5 {
         return tvShows;
     }
 
-    static void gsonSerialize(ArrayList<TVShow> tvShows) {
+    private static void printTvShow(ArrayList<TVShow> tvShows){
+        for(TVShow show : tvShows){
+            System.out.println("Name: " + show.getName());
+            System.out.println("Year: " + show.getYear());
+            System.out.println("Country: " + show.getCountry());
+            System.out.println("Description: " + show.getDescription());
+            System.out.println("PRODUCTION");
+            System.out.print("Executive producer: ");
+            for(String p : show.getProduction().getExecutiveProducer())
+                System.out.print(p + " ");
+            System.out.print("Producer: ");
+            for(String p : show.getProduction().getProducer())
+                System.out.print(p + " ");
+            System.out.print("Location: ");
+            for(String l : show.getProduction().getLocation())
+                System.out.print(l + " ");
+            System.out.print("Distributor: ");
+            for(String l : show.getProduction().getLocation())
+                System.out.print(l + " ");
+            printSeason(show);
+            System.out.println();
+        }
+    }
+
+    private static void printSeason(TVShow show) {
+        System.out.println("SEASONS");
+        for(Season s:show.getSeasons()){
+            System.out.println("Season id: " + s.getSeasonId());
+            System.out.println("Number of episodes: " + s.getEpisodeNumber());
+            System.out.println("Season description: " + s.getSeasonDescription());
+            printEpisode(s);
+        }
+    }
+
+    private static void printEpisode(Season s) {
+        for(Episode e:s.getEpisodes()){
+            System.out.println("Episode id: " + e.getEpisodeId());
+            System.out.println("Episode title: " + e.getEpisodeTitle());
+            System.out.println("Episode synopsis: " + e.getEpisodeDescription());
+            System.out.println("Episode director: " + e.getEpisodeDirector());
+        }
+    }
+
+    private static void gsonSerialize(ArrayList<TVShow> tvShows) {
         ArrayList<String> serializedShows = GsonSerialization.serialize(tvShows);
         ArrayList<TVShow> deserializedShows = GsonSerialization.deserialize(serializedShows);
+        printTvShow(deserializedShows);
     }
 
-    static void jacksonSerialize(ArrayList<TVShow> tvShows) throws JsonMappingException, JsonGenerationException {
+    private static void jacksonSerialize(ArrayList<TVShow> tvShows) throws JsonMappingException, JsonGenerationException {
         ArrayList<String> serializedShows = JacksonSerialization.serialize(tvShows);
         ArrayList<TVShow> deserializedShows = JacksonSerialization.deserialize(serializedShows);
+        printTvShow(deserializedShows);
     }
 
-    static void orgJsonSerialize(ArrayList<TVShow> tvShows) throws JsonMappingException, JsonGenerationException {
+    private static void orgJsonSerialize(ArrayList<TVShow> tvShows) throws JsonMappingException, JsonGenerationException {
         ArrayList<String> serializedShows = OrgJSONSerialization.serialize(tvShows);
         ArrayList<TVShow> deserializedShows = OrgJSONSerialization.deserialize(serializedShows);
+        printTvShow(deserializedShows);
     }
 }

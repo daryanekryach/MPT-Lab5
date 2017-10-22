@@ -155,9 +155,9 @@
 
 &=====GSON SERIALIZATION METRICS=====
 
-Execution time: 2322509409
+Execution time: 1243413106
 
-Used memory: 4
+Used memory: 5
 
 ======GSON SERIALIZATION=====
 TV Show #1
@@ -238,7 +238,7 @@
 }
 
 &=====GSON SERIALIZATION METRICS=====
-Execution time: 22047567
+Execution time: 24403700
 Used memory: 5
 
 ======GSON SERIALIZATION=====
@@ -320,13 +320,13 @@
 }
 
 &=====GSON SERIALIZATION METRICS=====
-Execution time: 25580057
+Execution time: 36236799
 Used memory: 5
 
 !======GSON DESERIALIZATION=====
 
 (=====GSON DESERIALIZATION METRICS=====
-Execution time: 16232657
+Execution time: 20389041
 Used memory: 5
 
 !=====JACKSON SERIALIZATION=====
@@ -336,8 +336,8 @@
 …	{"name":"Daredevil","year":2015,"country":"United States","description":"Marvel's Daredevil, or simply Daredevil, is an American web television series that stars the superhero character of the same name. It is produced by Marvel Television and airs on Netflix. It is set in the Marvel Cinematic Universe, and occurs sometime after the events of The Avengers.","production":{"executiveProducer":["Allie Goss"],"producer":["Kati Johnston"],"location":["New York City"],"distributor":["Netflix"]},"seasons":[{"seasonId":1,"episodeNumber":13,"seasonDescription":"Live action series that follows the journey of attorney Matt Murdock, who in a tragic accident was blinded as a boy but imbued with extraordinary senses. Murdock sets up practice in his old neighborhood of Hell's Kitchen, New York where he now fights against injustice as a respected lawyer by day and masked vigilante at night.","episodes":[{"episodeId":1,"episodeTitle":"Into the Ring","episodeDescription":"Murdock's vigilante crime fighting and his new law practice find equally dangerous challenges in a murder case tied to a corporate crime syndicate.","episodeDirector":"Phil Abraham"}]}]}
 
 )=====JACKSON SERIALIZATION METRICS=====
-Execution time: 4564571377
-Used memory: 11
+Execution time: 3032706969
+Used memory: 13
 
 !=====JACKSON SERIALIZATION=====
 TV Show #1
@@ -346,8 +346,8 @@
 …	{"name":"Daredevil","year":2015,"country":"United States","description":"Marvel's Daredevil, or simply Daredevil, is an American web television series that stars the superhero character of the same name. It is produced by Marvel Television and airs on Netflix. It is set in the Marvel Cinematic Universe, and occurs sometime after the events of The Avengers.","production":{"executiveProducer":["Allie Goss"],"producer":["Kati Johnston"],"location":["New York City"],"distributor":["Netflix"]},"seasons":[{"seasonId":1,"episodeNumber":13,"seasonDescription":"Live action series that follows the journey of attorney Matt Murdock, who in a tragic accident was blinded as a boy but imbued with extraordinary senses. Murdock sets up practice in his old neighborhood of Hell's Kitchen, New York where he now fights against injustice as a respected lawyer by day and masked vigilante at night.","episodes":[{"episodeId":1,"episodeTitle":"Into the Ring","episodeDescription":"Murdock's vigilante crime fighting and his new law practice find equally dangerous challenges in a murder case tied to a corporate crime syndicate.","episodeDirector":"Phil Abraham"}]}]}
 
 )=====JACKSON SERIALIZATION METRICS=====
-Execution time: 53018498
-Used memory: 11
+Execution time: 46005574
+Used memory: 13
 
 !=====JACKSON SERIALIZATION=====
 TV Show #1
@@ -356,14 +356,14 @@
 …	{"name":"Daredevil","year":2015,"country":"United States","description":"Marvel's Daredevil, or simply Daredevil, is an American web television series that stars the superhero character of the same name. It is produced by Marvel Television and airs on Netflix. It is set in the Marvel Cinematic Universe, and occurs sometime after the events of The Avengers.","production":{"executiveProducer":["Allie Goss"],"producer":["Kati Johnston"],"location":["New York City"],"distributor":["Netflix"]},"seasons":[{"seasonId":1,"episodeNumber":13,"seasonDescription":"Live action series that follows the journey of attorney Matt Murdock, who in a tragic accident was blinded as a boy but imbued with extraordinary senses. Murdock sets up practice in his old neighborhood of Hell's Kitchen, New York where he now fights against injustice as a respected lawyer by day and masked vigilante at night.","episodes":[{"episodeId":1,"episodeTitle":"Into the Ring","episodeDescription":"Murdock's vigilante crime fighting and his new law practice find equally dangerous challenges in a murder case tied to a corporate crime syndicate.","episodeDirector":"Phil Abraham"}]}]}
 
 )=====JACKSON SERIALIZATION METRICS=====
-Execution time: 51140735
-Used memory: 11
+Execution time: 46561835
+Used memory: 14
 
 #=====JACKSON DESERIALIZATION=====
 
 +=====JACKSON DESERIALIZATION METRICS=====
-Execution time: 274561859
-Used memory: 20
+Execution time: 133821582
+Used memory: 23
 
 "=====Org.JSON SERIALIZATION=====
 TV Show #1
@@ -372,8 +372,8 @@
 …	{"country":"United States","seasons":[{"seasonId":1,"episodeNumber":13,"seasonDescription":"Live action series that follows the journey of attorney Matt Murdock, who in a tragic accident was blinded as a boy but imbued with extraordinary senses. Murdock sets up practice in his old neighborhood of Hell's Kitchen, New York where he now fights against injustice as a respected lawyer by day and masked vigilante at night.","episodes":[{"episodeTitle":"Into the Ring","episodeDescription":"Murdock's vigilante crime fighting and his new law practice find equally dangerous challenges in a murder case tied to a corporate crime syndicate.","episodeDirector":"Phil Abraham","episodeId":1}]}],"year":2015,"production":{"executiveProducer":["Allie Goss"],"producer":["Kati Johnston"],"location":["New York City"],"distributor":["Netflix"]},"name":"Daredevil","description":"Marvel's Daredevil, or simply Daredevil, is an American web television series that stars the superhero character of the same name. It is produced by Marvel Television and airs on Netflix. It is set in the Marvel Cinematic Universe, and occurs sometime after the events of The Avengers."}
 
 *=====Org.JSON SERIALIZATION METRICS=====
-Execution time: 140685942
-Used memory: 22
+Execution time: 62769415
+Used memory: 25
 
 "=====Org.JSON SERIALIZATION=====
 TV Show #1
@@ -382,8 +382,8 @@
 …	{"country":"United States","seasons":[{"seasonId":1,"episodeNumber":13,"seasonDescription":"Live action series that follows the journey of attorney Matt Murdock, who in a tragic accident was blinded as a boy but imbued with extraordinary senses. Murdock sets up practice in his old neighborhood of Hell's Kitchen, New York where he now fights against injustice as a respected lawyer by day and masked vigilante at night.","episodes":[{"episodeTitle":"Into the Ring","episodeDescription":"Murdock's vigilante crime fighting and his new law practice find equally dangerous challenges in a murder case tied to a corporate crime syndicate.","episodeDirector":"Phil Abraham","episodeId":1}]}],"year":2015,"production":{"executiveProducer":["Allie Goss"],"producer":["Kati Johnston"],"location":["New York City"],"distributor":["Netflix"]},"name":"Daredevil","description":"Marvel's Daredevil, or simply Daredevil, is an American web television series that stars the superhero character of the same name. It is produced by Marvel Television and airs on Netflix. It is set in the Marvel Cinematic Universe, and occurs sometime after the events of The Avengers."}
 
 *=====Org.JSON SERIALIZATION METRICS=====
-Execution time: 2878958
-Used memory: 22
+Execution time: 2443523
+Used memory: 25
 
 "=====Org.JSON SERIALIZATION=====
 TV Show #1
@@ -392,9 +392,9 @@
 …	{"country":"United States","seasons":[{"seasonId":1,"episodeNumber":13,"seasonDescription":"Live action series that follows the journey of attorney Matt Murdock, who in a tragic accident was blinded as a boy but imbued with extraordinary senses. Murdock sets up practice in his old neighborhood of Hell's Kitchen, New York where he now fights against injustice as a respected lawyer by day and masked vigilante at night.","episodes":[{"episodeTitle":"Into the Ring","episodeDescription":"Murdock's vigilante crime fighting and his new law practice find equally dangerous challenges in a murder case tied to a corporate crime syndicate.","episodeDirector":"Phil Abraham","episodeId":1}]}],"year":2015,"production":{"executiveProducer":["Allie Goss"],"producer":["Kati Johnston"],"location":["New York City"],"distributor":["Netflix"]},"name":"Daredevil","description":"Marvel's Daredevil, or simply Daredevil, is an American web television series that stars the superhero character of the same name. It is produced by Marvel Television and airs on Netflix. It is set in the Marvel Cinematic Universe, and occurs sometime after the events of The Avengers."}
 
 *=====Org.JSON SERIALIZATION METRICS=====
-Execution time: 11596764
-Used memory: 22
+Execution time: 6532275
+Used memory: 25
 
 ,=====Org.JSON DESERIALIZATION METRICS=====
-Execution time: 18929234
-Used memory: 23
+Execution time: 8258434
+Used memory: 25

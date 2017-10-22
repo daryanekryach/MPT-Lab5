@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 public class JacksonSerialization {
 
-    public static ArrayList<String> serialize(ArrayList<TVShow> tvShows) {
+    public static ArrayList<String> serialize(ArrayList<TVShow> tvShows){
         Metrics.start();
         ArrayList<String> json = new ArrayList<>();
         ObjectMapper mapper = new ObjectMapper();
@@ -29,7 +29,7 @@ public class JacksonSerialization {
         return json;
     }
 
-    public static ArrayList<TVShow> deserialize(ArrayList<String> jsonTvShows) {
+    public static ArrayList<TVShow> deserialize(ArrayList<String> jsonTvShows){
         Metrics.start();
         ArrayList<TVShow> tvShows = new ArrayList<>();
         System.out.println("\n=====JACKSON DESERIALIZATION=====");
@@ -49,6 +49,7 @@ public class JacksonSerialization {
         System.out.println("\n=====JACKSON DESERIALIZATION METRICS=====");
         Metrics.getExecutionTime();
         Metrics.getUsedMemory();
+        System.out.println();
         return tvShows;
     }
 }

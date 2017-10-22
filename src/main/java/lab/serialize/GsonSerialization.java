@@ -43,6 +43,7 @@ public class GsonSerialization {
         System.out.println("\n=====GSON DESERIALIZATION METRICS=====");
         Metrics.getExecutionTime();
         Metrics.getUsedMemory();
+        System.out.println();
         return tvShows;
     }
 }
