@@ -60,7 +60,7 @@ public class Lab5 {
         return tvShows;
     }
 
-    private static void printTvShow(ArrayList<TVShow> tvShows){
+    public static boolean printTvShow(ArrayList<TVShow> tvShows){
         for(TVShow show : tvShows){
             System.out.println("Name: " + show.getName());
             System.out.println("Year: " + show.getYear());
@@ -79,29 +79,48 @@ public class Lab5 {
             System.out.print("Distributor: ");
             for(String l : show.getProduction().getLocation())
                 System.out.print(l + " ");
-            printSeason(show);
+            System.out.println("SEASONS");
+            for(Season s:show.getSeasons()){
+                System.out.println("Season id: " + s.getSeasonId());
+                System.out.println("Number of episodes: " + s.getEpisodeNumber());
+                System.out.println("Season description: " + s.getSeasonDescription());
+                for(Episode e:s.getEpisodes()){
+                    System.out.println("Episode id: " + e.getEpisodeId());
+                    System.out.println("Episode title: " + e.getEpisodeTitle());
+                    System.out.println("Episode synopsis: " + e.getEpisodeDescription());
+                    System.out.println("Episode director: " + e.getEpisodeDirector());
+                }
+            }
             System.out.println();
         }
+        return true;
     }
 
-    private static void printSeason(TVShow show) {
-        System.out.println("SEASONS");
-        for(Season s:show.getSeasons()){
-            System.out.println("Season id: " + s.getSeasonId());
-            System.out.println("Number of episodes: " + s.getEpisodeNumber());
-            System.out.println("Season description: " + s.getSeasonDescription());
-            printEpisode(s);
-        }
-    }
-
-    private static void printEpisode(Season s) {
-        for(Episode e:s.getEpisodes()){
-            System.out.println("Episode id: " + e.getEpisodeId());
-            System.out.println("Episode title: " + e.getEpisodeTitle());
-            System.out.println("Episode synopsis: " + e.getEpisodeDescription());
-            System.out.println("Episode director: " + e.getEpisodeDirector());
-        }
-    }
+//    public static boolean printSeason(TVShow show) {
+//        System.out.println("SEASONS");
+//        for(Season s:show.getSeasons()){
+//            System.out.println("Season id: " + s.getSeasonId());
+//            System.out.println("Number of episodes: " + s.getEpisodeNumber());
+//            System.out.println("Season description: " + s.getSeasonDescription());
+//            for(Episode e:s.getEpisodes()){
+//                System.out.println("Episode id: " + e.getEpisodeId());
+//                System.out.println("Episode title: " + e.getEpisodeTitle());
+//                System.out.println("Episode synopsis: " + e.getEpisodeDescription());
+//                System.out.println("Episode director: " + e.getEpisodeDirector());
+//            }
+//        }
+//        return true;
+//    }
+//
+//    public static boolean printEpisode(Season s) {
+//        for(Episode e:s.getEpisodes()){
+//            System.out.println("Episode id: " + e.getEpisodeId());
+//            System.out.println("Episode title: " + e.getEpisodeTitle());
+//            System.out.println("Episode synopsis: " + e.getEpisodeDescription());
+//            System.out.println("Episode director: " + e.getEpisodeDirector());
+//        }
+//        return true;
+//    }
 
     private static void gsonSerialize(ArrayList<TVShow> tvShows) {
         ArrayList<String> serializedShows = GsonSerialization.serialize(tvShows);
