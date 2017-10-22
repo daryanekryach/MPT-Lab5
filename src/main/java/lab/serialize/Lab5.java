@@ -96,32 +96,6 @@ public class Lab5 {
         return true;
     }
 
-//    public static boolean printSeason(TVShow show) {
-//        System.out.println("SEASONS");
-//        for(Season s:show.getSeasons()){
-//            System.out.println("Season id: " + s.getSeasonId());
-//            System.out.println("Number of episodes: " + s.getEpisodeNumber());
-//            System.out.println("Season description: " + s.getSeasonDescription());
-//            for(Episode e:s.getEpisodes()){
-//                System.out.println("Episode id: " + e.getEpisodeId());
-//                System.out.println("Episode title: " + e.getEpisodeTitle());
-//                System.out.println("Episode synopsis: " + e.getEpisodeDescription());
-//                System.out.println("Episode director: " + e.getEpisodeDirector());
-//            }
-//        }
-//        return true;
-//    }
-//
-//    public static boolean printEpisode(Season s) {
-//        for(Episode e:s.getEpisodes()){
-//            System.out.println("Episode id: " + e.getEpisodeId());
-//            System.out.println("Episode title: " + e.getEpisodeTitle());
-//            System.out.println("Episode synopsis: " + e.getEpisodeDescription());
-//            System.out.println("Episode director: " + e.getEpisodeDirector());
-//        }
-//        return true;
-//    }
-
     private static void gsonSerialize(ArrayList<TVShow> tvShows) {
         ArrayList<String> serializedShows = GsonSerialization.serialize(tvShows);
         ArrayList<TVShow> deserializedShows = GsonSerialization.deserialize(serializedShows);
