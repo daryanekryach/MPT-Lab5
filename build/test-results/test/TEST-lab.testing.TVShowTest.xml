@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="lab.testing.TVShowTest" tests="14" skipped="0" failures="0" errors="0" timestamp="2017-10-22T20:53:41" hostname="Anvym6" time="0.008">
+  <properties/>
+  <testcase name="setProduction" classname="lab.testing.TVShowTest" time="0.0"/>
+  <testcase name="getSeasons" classname="lab.testing.TVShowTest" time="0.0"/>
+  <testcase name="setCountry" classname="lab.testing.TVShowTest" time="0.001"/>
+  <testcase name="getName" classname="lab.testing.TVShowTest" time="0.0"/>
+  <testcase name="getYear" classname="lab.testing.TVShowTest" time="0.0"/>
+  <testcase name="addSeason" classname="lab.testing.TVShowTest" time="0.0"/>
+  <testcase name="setDescription" classname="lab.testing.TVShowTest" time="0.0"/>
+  <testcase name="setSeasons" classname="lab.testing.TVShowTest" time="0.0"/>
+  <testcase name="getProduction" classname="lab.testing.TVShowTest" time="0.0"/>
+  <testcase name="addProduction" classname="lab.testing.TVShowTest" time="0.0"/>
+  <testcase name="getDescription" classname="lab.testing.TVShowTest" time="0.0"/>
+  <testcase name="setName" classname="lab.testing.TVShowTest" time="0.001"/>
+  <testcase name="setYear" classname="lab.testing.TVShowTest" time="0.0"/>
+  <testcase name="getCountry" classname="lab.testing.TVShowTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

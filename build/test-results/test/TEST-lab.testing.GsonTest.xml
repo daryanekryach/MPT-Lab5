@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="lab.testing.GsonTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2017-10-22T20:53:33" hostname="Anvym6" time="2.534">
+  <properties/>
+  <testcase name="serialize" classname="lab.testing.GsonTest" time="2.465"/>
+  <testcase name="deserialize" classname="lab.testing.GsonTest" time="0.068"/>
+  <system-out><![CDATA[
+======GSON SERIALIZATION=====
+TV Show #1
+{
+  "name": "Teen Wolf",
+  "year": 2011,
+  "country": "United States",
+  "description": "A somewhat awkward teen is attacked by a werewolf and inherits the curse himself as well as the enemies that come with it.",
+  "production": {
+    "executiveProducer": [
+      "Jeff Davis"
+    ],
+    "producer": [
+      "Eric Wallace"
+    ],
+    "location": [
+      "Atlanta, Georgia"
+    ],
+    "distributor": [
+      "Viacom Media Networks"
+    ]
+  },
+  "seasons": [
+    {
+      "seasonId": 1,
+      "episodeNumber": 12,
+      "seasonDescription": "Scott McCall (Tyler Posey), is an average teenager suffering from asthma and living with his single mother in Beacon Hills. One night, he and his best friend Stiles Stilinski (Dylan O\u0027Brien), the son of the local sheriff, Sheriff Stilinski (Linden Ashby), learn about half a corpse found by police in the woods...",
+      "episodes": [
+        {
+          "episodeId": 1,
+          "episodeTitle": "Wolf Moon",
+          "episodeDescription": "Everything in Scott McCall\u0027s life is starting to fall into place. He gets a spot on the First Line of his Lacrosse team and a date with the woman of his dreams. When he gets bitten by a werewolf, the people around him could be in danger.",
+          "episodeDirector": "Russell Mulcahy"
+        }
+      ]
+    }
+  ]
+}
+TV Show #2
+{
+  "name": "Daredevil",
+  "year": 2015,
+  "country": "United States",
+  "description": "Marvel\u0027s Daredevil, or simply Daredevil, is an American web television series that stars the superhero character of the same name. It is produced by Marvel Television and airs on Netflix. It is set in the Marvel Cinematic Universe, and occurs sometime after the events of The Avengers.",
+  "production": {
+    "executiveProducer": [
+      "Allie Goss"
+    ],
+    "producer": [
+      "Kati Johnston"
+    ],
+    "location": [
+      "New York City"
+    ],
+    "distributor": [
+      "Netflix"
+    ]
+  },
+  "seasons": [
+    {
+      "seasonId": 1,
+      "episodeNumber": 13,
+      "seasonDescription": "Live action series that follows the journey of attorney Matt Murdock, who in a tragic accident was blinded as a boy but imbued with extraordinary senses. Murdock sets up practice in his old neighborhood of Hell\u0027s Kitchen, New York where he now fights against injustice as a respected lawyer by day and masked vigilante at night.",
+      "episodes": [
+        {
+          "episodeId": 1,
+          "episodeTitle": "Into the Ring",
+          "episodeDescription": "Murdock\u0027s vigilante crime fighting and his new law practice find equally dangerous challenges in a murder case tied to a corporate crime syndicate.",
+          "episodeDirector": "Phil Abraham"
+        }
+      ]
+    }
+  ]
+}
+
+=====GSON SERIALIZATION METRICS=====
+Execution time: 2322509409
+Used memory: 4
+
+======GSON SERIALIZATION=====
+TV Show #1
+{
+  "name": "Teen Wolf",
+  "year": 2011,
+  "country": "United States",
+  "description": "A somewhat awkward teen is attacked by a werewolf and inherits the curse himself as well as the enemies that come with it.",
+  "production": {
+    "executiveProducer": [
+      "Jeff Davis"
+    ],
+    "producer": [
+      "Eric Wallace"
+    ],
+    "location": [
+      "Atlanta, Georgia"
+    ],
+    "distributor": [
+      "Viacom Media Networks"
+    ]
+  },
+  "seasons": [
+    {
+      "seasonId": 1,
+      "episodeNumber": 12,
+      "seasonDescription": "Scott McCall (Tyler Posey), is an average teenager suffering from asthma and living with his single mother in Beacon Hills. One night, he and his best friend Stiles Stilinski (Dylan O\u0027Brien), the son of the local sheriff, Sheriff Stilinski (Linden Ashby), learn about half a corpse found by police in the woods...",
+      "episodes": [
+        {
+          "episodeId": 1,
+          "episodeTitle": "Wolf Moon",
+          "episodeDescription": "Everything in Scott McCall\u0027s life is starting to fall into place. He gets a spot on the First Line of his Lacrosse team and a date with the woman of his dreams. When he gets bitten by a werewolf, the people around him could be in danger.",
+          "episodeDirector": "Russell Mulcahy"
+        }
+      ]
+    }
+  ]
+}
+TV Show #2
+{
+  "name": "Daredevil",
+  "year": 2015,
+  "country": "United States",
+  "description": "Marvel\u0027s Daredevil, or simply Daredevil, is an American web television series that stars the superhero character of the same name. It is produced by Marvel Television and airs on Netflix. It is set in the Marvel Cinematic Universe, and occurs sometime after the events of The Avengers.",
+  "production": {
+    "executiveProducer": [
+      "Allie Goss"
+    ],
+    "producer": [
+      "Kati Johnston"
+    ],
+    "location": [
+      "New York City"
+    ],
+    "distributor": [
+      "Netflix"
+    ]
+  },
+  "seasons": [
+    {
+      "seasonId": 1,
+      "episodeNumber": 13,
+      "seasonDescription": "Live action series that follows the journey of attorney Matt Murdock, who in a tragic accident was blinded as a boy but imbued with extraordinary senses. Murdock sets up practice in his old neighborhood of Hell\u0027s Kitchen, New York where he now fights against injustice as a respected lawyer by day and masked vigilante at night.",
+      "episodes": [
+        {
+          "episodeId": 1,
+          "episodeTitle": "Into the Ring",
+          "episodeDescription": "Murdock\u0027s vigilante crime fighting and his new law practice find equally dangerous challenges in a murder case tied to a corporate crime syndicate.",
+          "episodeDirector": "Phil Abraham"
+        }
+      ]
+    }
+  ]
+}
+
+=====GSON SERIALIZATION METRICS=====
+Execution time: 22047567
+Used memory: 5
+
+======GSON SERIALIZATION=====
+TV Show #1
+{
+  "name": "Teen Wolf",
+  "year": 2011,
+  "country": "United States",
+  "description": "A somewhat awkward teen is attacked by a werewolf and inherits the curse himself as well as the enemies that come with it.",
+  "production": {
+    "executiveProducer": [
+      "Jeff Davis"
+    ],
+    "producer": [
+      "Eric Wallace"
+    ],
+    "location": [
+      "Atlanta, Georgia"
+    ],
+    "distributor": [
+      "Viacom Media Networks"
+    ]
+  },
+  "seasons": [
+    {
+      "seasonId": 1,
+      "episodeNumber": 12,
+      "seasonDescription": "Scott McCall (Tyler Posey), is an average teenager suffering from asthma and living with his single mother in Beacon Hills. One night, he and his best friend Stiles Stilinski (Dylan O\u0027Brien), the son of the local sheriff, Sheriff Stilinski (Linden Ashby), learn about half a corpse found by police in the woods...",
+      "episodes": [
+        {
+          "episodeId": 1,
+          "episodeTitle": "Wolf Moon",
+          "episodeDescription": "Everything in Scott McCall\u0027s life is starting to fall into place. He gets a spot on the First Line of his Lacrosse team and a date with the woman of his dreams. When he gets bitten by a werewolf, the people around him could be in danger.",
+          "episodeDirector": "Russell Mulcahy"
+        }
+      ]
+    }
+  ]
+}
+TV Show #2
+{
+  "name": "Daredevil",
+  "year": 2015,
+  "country": "United States",
+  "description": "Marvel\u0027s Daredevil, or simply Daredevil, is an American web television series that stars the superhero character of the same name. It is produced by Marvel Television and airs on Netflix. It is set in the Marvel Cinematic Universe, and occurs sometime after the events of The Avengers.",
+  "production": {
+    "executiveProducer": [
+      "Allie Goss"
+    ],
+    "producer": [
+      "Kati Johnston"
+    ],
+    "location": [
+      "New York City"
+    ],
+    "distributor": [
+      "Netflix"
+    ]
+  },
+  "seasons": [
+    {
+      "seasonId": 1,
+      "episodeNumber": 13,
+      "seasonDescription": "Live action series that follows the journey of attorney Matt Murdock, who in a tragic accident was blinded as a boy but imbued with extraordinary senses. Murdock sets up practice in his old neighborhood of Hell\u0027s Kitchen, New York where he now fights against injustice as a respected lawyer by day and masked vigilante at night.",
+      "episodes": [
+        {
+          "episodeId": 1,
+          "episodeTitle": "Into the Ring",
+          "episodeDescription": "Murdock\u0027s vigilante crime fighting and his new law practice find equally dangerous challenges in a murder case tied to a corporate crime syndicate.",
+          "episodeDirector": "Phil Abraham"
+        }
+      ]
+    }
+  ]
+}
+
+=====GSON SERIALIZATION METRICS=====
+Execution time: 25580057
+Used memory: 5
+
+======GSON DESERIALIZATION=====
+
+=====GSON DESERIALIZATION METRICS=====
+Execution time: 16232657
+Used memory: 5
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

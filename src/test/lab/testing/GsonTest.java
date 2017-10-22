@@ -7,7 +7,7 @@ import java.util.ArrayList;
 
 public class GsonTest {
 
-    ArrayList<TVShow> tvShows = Lab5.createTVShows();
+    private ArrayList<TVShow> tvShows = Lab5.createTVShows();
 
     @Test
     public void serialize(){

@@ -6,7 +6,7 @@ import lab.serialize.*;
 import java.util.ArrayList;
 public class OrgJsonTest {
 
-    ArrayList<TVShow> tvShows = Lab5.createTVShows();
+    private ArrayList<TVShow> tvShows = Lab5.createTVShows();
 
     @Test
     public void serialize(){

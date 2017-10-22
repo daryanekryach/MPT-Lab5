@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="lab.testing.OrgJsonTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2017-10-22T20:53:40" hostname="Anvym6" time="0.205">
+  <properties/>
+  <testcase name="serialize" classname="lab.testing.OrgJsonTest" time="0.17"/>
+  <testcase name="deserialize" classname="lab.testing.OrgJsonTest" time="0.035"/>
+  <system-out><![CDATA[
+=====Org.JSON SERIALIZATION=====
+TV Show #1
+{"country":"United States","seasons":[{"seasonId":1,"episodeNumber":12,"seasonDescription":"Scott McCall (Tyler Posey), is an average teenager suffering from asthma and living with his single mother in Beacon Hills. One night, he and his best friend Stiles Stilinski (Dylan O'Brien), the son of the local sheriff, Sheriff Stilinski (Linden Ashby), learn about half a corpse found by police in the woods...","episodes":[{"episodeTitle":"Wolf Moon","episodeDescription":"Everything in Scott McCall's life is starting to fall into place. He gets a spot on the First Line of his Lacrosse team and a date with the woman of his dreams. When he gets bitten by a werewolf, the people around him could be in danger.","episodeDirector":"Russell Mulcahy","episodeId":1}]}],"year":2011,"production":{"executiveProducer":["Jeff Davis"],"producer":["Eric Wallace"],"location":["Atlanta, Georgia"],"distributor":["Viacom Media Networks"]},"name":"Teen Wolf","description":"A somewhat awkward teen is attacked by a werewolf and inherits the curse himself as well as the enemies that come with it."}
+TV Show #2
+{"country":"United States","seasons":[{"seasonId":1,"episodeNumber":13,"seasonDescription":"Live action series that follows the journey of attorney Matt Murdock, who in a tragic accident was blinded as a boy but imbued with extraordinary senses. Murdock sets up practice in his old neighborhood of Hell's Kitchen, New York where he now fights against injustice as a respected lawyer by day and masked vigilante at night.","episodes":[{"episodeTitle":"Into the Ring","episodeDescription":"Murdock's vigilante crime fighting and his new law practice find equally dangerous challenges in a murder case tied to a corporate crime syndicate.","episodeDirector":"Phil Abraham","episodeId":1}]}],"year":2015,"production":{"executiveProducer":["Allie Goss"],"producer":["Kati Johnston"],"location":["New York City"],"distributor":["Netflix"]},"name":"Daredevil","description":"Marvel's Daredevil, or simply Daredevil, is an American web television series that stars the superhero character of the same name. It is produced by Marvel Television and airs on Netflix. It is set in the Marvel Cinematic Universe, and occurs sometime after the events of The Avengers."}
+
+=====Org.JSON SERIALIZATION METRICS=====
+Execution time: 140685942
+Used memory: 22
+
+=====Org.JSON SERIALIZATION=====
+TV Show #1
+{"country":"United States","seasons":[{"seasonId":1,"episodeNumber":12,"seasonDescription":"Scott McCall (Tyler Posey), is an average teenager suffering from asthma and living with his single mother in Beacon Hills. One night, he and his best friend Stiles Stilinski (Dylan O'Brien), the son of the local sheriff, Sheriff Stilinski (Linden Ashby), learn about half a corpse found by police in the woods...","episodes":[{"episodeTitle":"Wolf Moon","episodeDescription":"Everything in Scott McCall's life is starting to fall into place. He gets a spot on the First Line of his Lacrosse team and a date with the woman of his dreams. When he gets bitten by a werewolf, the people around him could be in danger.","episodeDirector":"Russell Mulcahy","episodeId":1}]}],"year":2011,"production":{"executiveProducer":["Jeff Davis"],"producer":["Eric Wallace"],"location":["Atlanta, Georgia"],"distributor":["Viacom Media Networks"]},"name":"Teen Wolf","description":"A somewhat awkward teen is attacked by a werewolf and inherits the curse himself as well as the enemies that come with it."}
+TV Show #2
+{"country":"United States","seasons":[{"seasonId":1,"episodeNumber":13,"seasonDescription":"Live action series that follows the journey of attorney Matt Murdock, who in a tragic accident was blinded as a boy but imbued with extraordinary senses. Murdock sets up practice in his old neighborhood of Hell's Kitchen, New York where he now fights against injustice as a respected lawyer by day and masked vigilante at night.","episodes":[{"episodeTitle":"Into the Ring","episodeDescription":"Murdock's vigilante crime fighting and his new law practice find equally dangerous challenges in a murder case tied to a corporate crime syndicate.","episodeDirector":"Phil Abraham","episodeId":1}]}],"year":2015,"production":{"executiveProducer":["Allie Goss"],"producer":["Kati Johnston"],"location":["New York City"],"distributor":["Netflix"]},"name":"Daredevil","description":"Marvel's Daredevil, or simply Daredevil, is an American web television series that stars the superhero character of the same name. It is produced by Marvel Television and airs on Netflix. It is set in the Marvel Cinematic Universe, and occurs sometime after the events of The Avengers."}
+
+=====Org.JSON SERIALIZATION METRICS=====
+Execution time: 2878958
+Used memory: 22
+
+=====Org.JSON SERIALIZATION=====
+TV Show #1
+{"country":"United States","seasons":[{"seasonId":1,"episodeNumber":12,"seasonDescription":"Scott McCall (Tyler Posey), is an average teenager suffering from asthma and living with his single mother in Beacon Hills. One night, he and his best friend Stiles Stilinski (Dylan O'Brien), the son of the local sheriff, Sheriff Stilinski (Linden Ashby), learn about half a corpse found by police in the woods...","episodes":[{"episodeTitle":"Wolf Moon","episodeDescription":"Everything in Scott McCall's life is starting to fall into place. He gets a spot on the First Line of his Lacrosse team and a date with the woman of his dreams. When he gets bitten by a werewolf, the people around him could be in danger.","episodeDirector":"Russell Mulcahy","episodeId":1}]}],"year":2011,"production":{"executiveProducer":["Jeff Davis"],"producer":["Eric Wallace"],"location":["Atlanta, Georgia"],"distributor":["Viacom Media Networks"]},"name":"Teen Wolf","description":"A somewhat awkward teen is attacked by a werewolf and inherits the curse himself as well as the enemies that come with it."}
+TV Show #2
+{"country":"United States","seasons":[{"seasonId":1,"episodeNumber":13,"seasonDescription":"Live action series that follows the journey of attorney Matt Murdock, who in a tragic accident was blinded as a boy but imbued with extraordinary senses. Murdock sets up practice in his old neighborhood of Hell's Kitchen, New York where he now fights against injustice as a respected lawyer by day and masked vigilante at night.","episodes":[{"episodeTitle":"Into the Ring","episodeDescription":"Murdock's vigilante crime fighting and his new law practice find equally dangerous challenges in a murder case tied to a corporate crime syndicate.","episodeDirector":"Phil Abraham","episodeId":1}]}],"year":2015,"production":{"executiveProducer":["Allie Goss"],"producer":["Kati Johnston"],"location":["New York City"],"distributor":["Netflix"]},"name":"Daredevil","description":"Marvel's Daredevil, or simply Daredevil, is an American web television series that stars the superhero character of the same name. It is produced by Marvel Television and airs on Netflix. It is set in the Marvel Cinematic Universe, and occurs sometime after the events of The Avengers."}
+
+=====Org.JSON SERIALIZATION METRICS=====
+Execution time: 11596764
+Used memory: 22
+
+=====Org.JSON DESERIALIZATION METRICS=====
+Execution time: 18929234
+Used memory: 23
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,8 +1,8 @@
 package lab.serialize;
 
 public class Metrics {
-    static long startTime;
-    static long stopTime;
+    private static long startTime;
+    private static long stopTime;
 
     public static void start() {
         startTime = System.nanoTime();

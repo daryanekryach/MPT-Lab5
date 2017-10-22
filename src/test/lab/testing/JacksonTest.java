@@ -9,7 +9,7 @@ import static org.junit.Assert.assertNotEquals;
 
 public class JacksonTest {
 
-    ArrayList<TVShow> tvShows = Lab5.createTVShows();
+    private ArrayList<TVShow> tvShows = Lab5.createTVShows();
 
     @Test
     public void serialize(){
