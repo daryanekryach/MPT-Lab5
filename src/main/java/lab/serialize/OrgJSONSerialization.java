@@ -4,6 +4,9 @@ import org.json.JSONArray;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
 
 public class OrgJSONSerialization {
 
@@ -25,7 +28,7 @@ public class OrgJSONSerialization {
         System.out.println("\n=====Org.JSON SERIALIZATION METRICS=====");
         Metrics.getExecutionTime();
         Metrics.getUsedMemory();
-        return json;//
+        return json;
     }
 
     public static ArrayList<TVShow> deserialize(ArrayList<String> jsonTvShows) {
@@ -42,6 +45,7 @@ public class OrgJSONSerialization {
             tvShow.setSeasons(parseSeasonJSON(object));
             tvShows.add(tvShow);
         }
+        Lab5.printTvShow(tvShows);
         Metrics.stop();
 
         System.out.println("\n=====Org.JSON DESERIALIZATION METRICS=====");
@@ -69,32 +73,34 @@ public class OrgJSONSerialization {
         return production;
     }
 
-    private static ArrayList<Season> parseSeasonJSON(JSONObject object) {
-        JSONArray seasonJson = object.getJSONArray("seasons");
-        ArrayList<Season> seasons = new ArrayList<>();
+    private static Map<Integer,Season> parseSeasonJSON(JSONObject object) {
+        JSONObject seasonJson = object.getJSONObject("seasons");
+        Map<Integer,Season> seasons = new HashMap<>();
         Season season = new Season();
-        for (int i = 0; i < seasonJson.length(); i++) {
-            season.setSeasonId(seasonJson.getJSONObject(i).getInt("seasonId"));
-            season.setEpisodeNumber(seasonJson.getJSONObject(i).getInt("episodeNumber"));
-            season.setSeasonDescription(seasonJson.getJSONObject(i).getString("seasonDescription"));
-            season.setEpisodes(parseEpisodeJSON(seasonJson));
-            seasons.add(season);
+        for( int i=0; i<seasonJson.length(); i++){
+            JSONObject seasonObj = seasonJson.getJSONObject(""+(i+1));
+            season.setSeasonId((int)(seasonObj.toMap().get("seasonId")));
+            season.setEpisodeNumber((int)(seasonObj.toMap().get("episodeNumber")));
+            season.setSeasonDescription((String)(seasonObj.toMap().get("seasonDescription")));
+            season.setEpisodes(parseEpisodeJSON(((HashMap)(seasonObj.toMap().get("episodes")))));
+            seasons.put(season.getSeasonId(),season);
         }
         return seasons;
     }
 
-    private static ArrayList<Episode> parseEpisodeJSON(JSONArray object) {
-        ArrayList<Episode> episodes = new ArrayList<>();
-        for (int j = 0; j < object.length(); j++) {
-            JSONArray episodeJson = object.getJSONObject(j).getJSONArray("episodes");
+    private static  Map<Integer,Episode> parseEpisodeJSON(HashMap hashMap) {
+        Map<Integer,Episode> episodes =  new HashMap<>();
+        Iterator entries = hashMap.entrySet().iterator();
+        while (entries.hasNext()) {
             Episode episode = new Episode();
-            for (int i = 0; i < episodeJson.length(); i++) {
-                episode.setEpisodeId(episodeJson.getJSONObject(i).getInt("episodeId"));
-                episode.setEpisodeTitle(episodeJson.getJSONObject(i).getString("episodeTitle"));
-                episode.setEpisodeDescription(episodeJson.getJSONObject(i).getString("episodeDescription"));
-                episode.setEpisodeDirector(episodeJson.getJSONObject(i).getString("episodeDirector"));
-                episodes.add(episode);
-            }
+            Map.Entry entry = (Map.Entry) entries.next();
+            Object episodeData = entry.getValue();
+            episode.setEpisodeId((int)((HashMap)episodeData).get("episodeId"));
+            episode.setEpisodeTitle((String)((HashMap)episodeData).get("episodeTitle"));
+            episode.setEpisodeDescription((String)((HashMap)episodeData).get("episodeDescription"));
+            episode.setEpisodeDirector((String)((HashMap)episodeData).get("episodeDirector"));
+            episodes.put(episode.getEpisodeId(),episode);
+            hashMap.entrySet().toArray();
         }
         return episodes;
     }

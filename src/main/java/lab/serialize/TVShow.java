@@ -8,7 +8,7 @@ public class TVShow {
     private String country;
     private String description;
     private Production production;
-    private ArrayList<Season> seasons= new ArrayList<>();
+    private Map<Integer,Season> seasons = new HashMap<>();
 
     public TVShow(){}
 
@@ -20,7 +20,7 @@ public class TVShow {
     }
 
     public void addSeason(Season season){
-        seasons.add(season);
+        seasons.put(season.getSeasonId(),season);
     }
 
     public void setName(String _name){
@@ -63,11 +63,11 @@ public class TVShow {
         return production;
     }
 
-    public void setSeasons(ArrayList<Season> _seasons){
-        seasons=_seasons;
+    public void setSeasons(Map<Integer, Season> _seasons) {
+        seasons = _seasons;
     }
 
-    public ArrayList<Season> getSeasons() {
+    public Map<Integer, Season> getSeasons() {
         return seasons;
     }
 }

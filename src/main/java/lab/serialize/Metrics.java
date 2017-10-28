@@ -5,11 +5,11 @@ public class Metrics {
     private static long stopTime;
 
     public static void start() {
-        startTime = System.nanoTime();
+        startTime = System.currentTimeMillis();
     }
 
     public static void stop() {
-        stopTime = System.nanoTime();
+        stopTime = System.currentTimeMillis();
     }
 
     public static void getExecutionTime() {

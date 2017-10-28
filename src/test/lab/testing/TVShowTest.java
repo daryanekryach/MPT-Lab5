@@ -4,6 +4,8 @@ import org.junit.Test;
 import lab.serialize.*;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 import static org.junit.Assert.assertEquals;
 
@@ -100,8 +102,8 @@ public class TVShowTest {
     @Test
     public void setSeasons() {
         TVShow show = new TVShow();
-        ArrayList<Season> seasons = new ArrayList<>();
-        seasons.add(new Season(1, 13, "Description"));
+        Map<Integer,Season> seasons = new HashMap<>();
+        seasons.put(1,new Season(1, 13, "Description"));
         show.setSeasons(seasons);
         assertEquals(show.getSeasons(), seasons);
     }
@@ -109,8 +111,8 @@ public class TVShowTest {
     @Test
     public void getSeasons() {
         TVShow show = new TVShow();
-        ArrayList<Season> seasons = new ArrayList<>();
-        seasons.add(new Season(1, 13, "Description "));
+        Map<Integer,Season> seasons = new HashMap<>();
+        seasons.put(1,new Season(1, 13, "Description "));
         show.setSeasons(seasons);
         assertEquals(seasons, show.getSeasons());
     }
@@ -130,8 +132,8 @@ public class TVShowTest {
     @Test
     public void addSeason() {
         TVShow show = new TVShow();
-        ArrayList<Season> seasons = new ArrayList<>();
-        seasons.add(new Season(1, 13, "Description"));
+        Map<Integer,Season> seasons = new HashMap<>();
+        seasons.put(1,new Season(1, 13, "Description"));
         show.setSeasons(seasons);
         Season testSeason = new Season(2, 13, "Description 2");
         show.addSeason(testSeason);

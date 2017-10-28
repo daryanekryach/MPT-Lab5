@@ -38,6 +38,7 @@ public class GsonSerialization {
             TVShow tvShow = gson.fromJson(json, TVShow.class);
             tvShows.add(tvShow);
         }
+        Lab5.printTvShow(tvShows);
         Metrics.stop();
 
         System.out.println("\n=====GSON DESERIALIZATION METRICS=====");

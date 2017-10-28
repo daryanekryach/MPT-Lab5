@@ -6,10 +6,9 @@ public class Season {
     private int seasonId;
     private int episodeNumber;
     private String seasonDescription;
-    private ArrayList<Episode> episodes = new ArrayList<>();
+    private Map<Integer, Episode> episodes = new HashMap<>();
 
-    public Season() {
-    }
+    public Season(){}
 
     public Season(int _id, int _episodeNumber, String description) {
         seasonId = _id;
@@ -18,7 +17,7 @@ public class Season {
     }
 
     public void addEpisode(Episode episode) {
-        episodes.add(episode);
+        episodes.put(episode.getEpisodeId(),episode);
     }
 
     public void setSeasonId(int id) {
@@ -45,11 +44,11 @@ public class Season {
         return seasonDescription;
     }
 
-    public ArrayList<Episode> getEpisodes() {
-        return episodes;
+    public void setEpisodes(Map<Integer, Episode> _episodes) {
+        episodes = _episodes;
     }
 
-    public void setEpisodes(ArrayList<Episode> episodes) {
-        this.episodes = episodes;
+    public Map<Integer, Episode> getEpisodes() {
+        return episodes;
     }
 }
