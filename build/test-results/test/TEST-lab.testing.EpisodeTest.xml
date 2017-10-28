@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="lab.testing.EpisodeTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2017-10-22T21:30:57" hostname="Anvym6" time="0.011">
+<testsuite name="lab.testing.EpisodeTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2017-10-28T17:04:45" hostname="Anvym6" time="0.013">
   <properties/>
   <testcase name="setEpisodeDescription" classname="lab.testing.EpisodeTest" time="0.008"/>
-  <testcase name="getEpisodeTitle" classname="lab.testing.EpisodeTest" time="0.001"/>
+  <testcase name="getEpisodeTitle" classname="lab.testing.EpisodeTest" time="0.0"/>
   <testcase name="setEpisodeId" classname="lab.testing.EpisodeTest" time="0.0"/>
-  <testcase name="getEpisodeDescription" classname="lab.testing.EpisodeTest" time="0.0"/>
+  <testcase name="getEpisodeDescription" classname="lab.testing.EpisodeTest" time="0.002"/>
   <testcase name="setEpisodeTitle" classname="lab.testing.EpisodeTest" time="0.0"/>
   <testcase name="getEpisodeDirector" classname="lab.testing.EpisodeTest" time="0.0"/>
   <testcase name="setEpisodeDirector" classname="lab.testing.EpisodeTest" time="0.0"/>

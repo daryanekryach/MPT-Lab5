@@ -2,8 +2,6 @@ package lab.testing;
 
 import org.junit.Test;
 import lab.serialize.*;
-
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -137,7 +135,7 @@ public class TVShowTest {
         show.setSeasons(seasons);
         Season testSeason = new Season(2, 13, "Description 2");
         show.addSeason(testSeason);
-        assertEquals(show.getSeasons().get(1), testSeason);
+        assertEquals(show.getSeasons().get(2), testSeason);
     }
 
 

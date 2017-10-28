@@ -2,9 +2,7 @@ package lab.serialize;
 
 import com.fasterxml.jackson.core.JsonGenerationException;
 import com.fasterxml.jackson.databind.JsonMappingException;
-
 import java.util.ArrayList;
-import java.util.Map;
 
 public class Lab5 {
     public static void main(String[] args)  throws JsonMappingException, JsonGenerationException {
@@ -99,19 +97,18 @@ public class Lab5 {
 
     private static void gsonSerialize(ArrayList<TVShow> tvShows) {
         ArrayList<String> serializedShows = GsonSerialization.serialize(tvShows);
-        ArrayList<TVShow> deserializedShows = GsonSerialization.deserialize(serializedShows);
-        //printTvShow(deserializedShows);
+        GsonSerialization.deserialize(serializedShows);
     }
 
-    private static void jacksonSerialize(ArrayList<TVShow> tvShows) throws JsonMappingException, JsonGenerationException {
+    private static void jacksonSerialize(ArrayList<TVShow> tvShows) throws JsonMappingException,
+            JsonGenerationException {
         ArrayList<String> serializedShows = JacksonSerialization.serialize(tvShows);
-        ArrayList<TVShow> deserializedShows = JacksonSerialization.deserialize(serializedShows);
-        //printTvShow(deserializedShows);
+        JacksonSerialization.deserialize(serializedShows);
     }
 
-    private static void orgJsonSerialize(ArrayList<TVShow> tvShows) throws JsonMappingException, JsonGenerationException {
+    private static void orgJsonSerialize(ArrayList<TVShow> tvShows) throws JsonMappingException,
+            JsonGenerationException {
         ArrayList<String> serializedShows = OrgJSONSerialization.serialize(tvShows);
-        ArrayList<TVShow> deserializedShows = OrgJSONSerialization.deserialize(serializedShows);
-       //printTvShow(deserializedShows);
+        OrgJSONSerialization.deserialize(serializedShows);
     }
 }

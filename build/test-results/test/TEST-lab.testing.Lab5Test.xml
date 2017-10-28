@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="lab.testing.Lab5Test" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-10-28T17:05:06" hostname="Anvym6" time="0.055">
+  <properties/>
+  <testcase name="printTvShowsTest" classname="lab.testing.Lab5Test" time="0.055"/>
+  <system-out><![CDATA[
+======GSON SERIALIZATION=====
+TV Show #1
+{
+  "name": "Teen Wolf",
+  "year": 2011,
+  "country": "United States",
+  "description": "A somewhat awkward teen is attacked by a werewolf and inherits the curse himself as well as the enemies that come with it.",
+  "production": {
+    "executiveProducer": [
+      "Jeff Davis"
+    ],
+    "producer": [
+      "Eric Wallace"
+    ],
+    "location": [
+      "Atlanta, Georgia"
+    ],
+    "distributor": [
+      "Viacom Media Networks"
+    ]
+  },
+  "seasons": {
+    "1": {
+      "seasonId": 1,
+      "episodeNumber": 12,
+      "seasonDescription": "Scott McCall (Tyler Posey), is an average teenager suffering from asthma and living with his single mother in Beacon Hills. One night, he and his best friend Stiles Stilinski (Dylan O\u0027Brien), the son of the local sheriff, Sheriff Stilinski (Linden Ashby), learn about half a corpse found by police in the woods...",
+      "episodes": {
+        "1": {
+          "episodeId": 1,
+          "episodeTitle": "Wolf Moon",
+          "episodeDescription": "Everything in Scott McCall\u0027s life is starting to fall into place. He gets a spot on the First Line of his Lacrosse team and a date with the woman of his dreams. When he gets bitten by a werewolf, the people around him could be in danger.",
+          "episodeDirector": "Russell Mulcahy"
+        }
+      }
+    }
+  }
+}
+TV Show #2
+{
+  "name": "Daredevil",
+  "year": 2015,
+  "country": "United States",
+  "description": "Marvel\u0027s Daredevil, or simply Daredevil, is an American web television series that stars the superhero character of the same name. It is produced by Marvel Television and airs on Netflix. It is set in the Marvel Cinematic Universe, and occurs sometime after the events of The Avengers.",
+  "production": {
+    "executiveProducer": [
+      "Allie Goss"
+    ],
+    "producer": [
+      "Kati Johnston"
+    ],
+    "location": [
+      "New York City"
+    ],
+    "distributor": [
+      "Netflix"
+    ]
+  },
+  "seasons": {
+    "1": {
+      "seasonId": 1,
+      "episodeNumber": 13,
+      "seasonDescription": "Live action series that follows the journey of attorney Matt Murdock, who in a tragic accident was blinded as a boy but imbued with extraordinary senses. Murdock sets up practice in his old neighborhood of Hell\u0027s Kitchen, New York where he now fights against injustice as a respected lawyer by day and masked vigilante at night.",
+      "episodes": {
+        "1": {
+          "episodeId": 1,
+          "episodeTitle": "Into the Ring",
+          "episodeDescription": "Murdock\u0027s vigilante crime fighting and his new law practice find equally dangerous challenges in a murder case tied to a corporate crime syndicate.",
+          "episodeDirector": "Phil Abraham"
+        }
+      }
+    }
+  }
+}
+
+=====GSON SERIALIZATION METRICS=====
+Execution time: 34
+Used memory: 24
+
+======GSON DESERIALIZATION=====
+Name: Teen Wolf
+Year: 2011
+Country: United States
+Description: A somewhat awkward teen is attacked by a werewolf and inherits the curse himself as well as the enemies that come with it.
+PRODUCTION
+Executive producer: Jeff Davis 
+Producer: Eric Wallace 
+Location: Atlanta, Georgia 
+Distributor: Atlanta, Georgia SEASONS
+Season id: 1
+Number of episodes: 12
+Season description: Scott McCall (Tyler Posey), is an average teenager suffering from asthma and living with his single mother in Beacon Hills. One night, he and his best friend Stiles Stilinski (Dylan O'Brien), the son of the local sheriff, Sheriff Stilinski (Linden Ashby), learn about half a corpse found by police in the woods...
+Episode id: 1
+Episode title: Wolf Moon
+Episode synopsis: Everything in Scott McCall's life is starting to fall into place. He gets a spot on the First Line of his Lacrosse team and a date with the woman of his dreams. When he gets bitten by a werewolf, the people around him could be in danger.
+Episode director: Russell Mulcahy
+
+Name: Daredevil
+Year: 2015
+Country: United States
+Description: Marvel's Daredevil, or simply Daredevil, is an American web television series that stars the superhero character of the same name. It is produced by Marvel Television and airs on Netflix. It is set in the Marvel Cinematic Universe, and occurs sometime after the events of The Avengers.
+PRODUCTION
+Executive producer: Allie Goss 
+Producer: Kati Johnston 
+Location: New York City 
+Distributor: New York City SEASONS
+Season id: 1
+Number of episodes: 13
+Season description: Live action series that follows the journey of attorney Matt Murdock, who in a tragic accident was blinded as a boy but imbued with extraordinary senses. Murdock sets up practice in his old neighborhood of Hell's Kitchen, New York where he now fights against injustice as a respected lawyer by day and masked vigilante at night.
+Episode id: 1
+Episode title: Into the Ring
+Episode synopsis: Murdock's vigilante crime fighting and his new law practice find equally dangerous challenges in a murder case tied to a corporate crime syndicate.
+Episode director: Phil Abraham
+
+
+=====GSON DESERIALIZATION METRICS=====
+Execution time: 16
+Used memory: 24
+
+Name: Teen Wolf
+Year: 2011
+Country: United States
+Description: A somewhat awkward teen is attacked by a werewolf and inherits the curse himself as well as the enemies that come with it.
+PRODUCTION
+Executive producer: Jeff Davis 
+Producer: Eric Wallace 
+Location: Atlanta, Georgia 
+Distributor: Atlanta, Georgia SEASONS
+Season id: 1
+Number of episodes: 12
+Season description: Scott McCall (Tyler Posey), is an average teenager suffering from asthma and living with his single mother in Beacon Hills. One night, he and his best friend Stiles Stilinski (Dylan O'Brien), the son of the local sheriff, Sheriff Stilinski (Linden Ashby), learn about half a corpse found by police in the woods...
+Episode id: 1
+Episode title: Wolf Moon
+Episode synopsis: Everything in Scott McCall's life is starting to fall into place. He gets a spot on the First Line of his Lacrosse team and a date with the woman of his dreams. When he gets bitten by a werewolf, the people around him could be in danger.
+Episode director: Russell Mulcahy
+
+Name: Daredevil
+Year: 2015
+Country: United States
+Description: Marvel's Daredevil, or simply Daredevil, is an American web television series that stars the superhero character of the same name. It is produced by Marvel Television and airs on Netflix. It is set in the Marvel Cinematic Universe, and occurs sometime after the events of The Avengers.
+PRODUCTION
+Executive producer: Allie Goss 
+Producer: Kati Johnston 
+Location: New York City 
+Distributor: New York City SEASONS
+Season id: 1
+Number of episodes: 13
+Season description: Live action series that follows the journey of attorney Matt Murdock, who in a tragic accident was blinded as a boy but imbued with extraordinary senses. Murdock sets up practice in his old neighborhood of Hell's Kitchen, New York where he now fights against injustice as a respected lawyer by day and masked vigilante at night.
+Episode id: 1
+Episode title: Into the Ring
+Episode synopsis: Murdock's vigilante crime fighting and his new law practice find equally dangerous challenges in a murder case tied to a corporate crime syndicate.
+Episode director: Phil Abraham
+
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
