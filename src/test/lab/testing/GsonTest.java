@@ -11,7 +11,7 @@ public class GsonTest {
 
     @Test
     public void serialize(){
-        assertNotEquals(tvShows, GsonSerialization.serialize(tvShows));
+        assertNotNull(GsonSerialization.serialize(tvShows));
     }
 
     @Test

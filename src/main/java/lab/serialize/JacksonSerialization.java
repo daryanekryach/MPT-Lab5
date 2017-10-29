@@ -1,6 +1,8 @@
 package lab.serialize;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.SerializationFeature;
+
 import java.io.IOException;
 import java.util.ArrayList;
 
@@ -14,6 +16,7 @@ public class JacksonSerialization {
         for (TVShow show : tvShows) {
             try {
                 String jsonShow = mapper.writeValueAsString(show);
+                mapper.enable(SerializationFeature.INDENT_OUTPUT);
                 json.add(jsonShow);
                 System.out.println("TV Show #" + (tvShows.indexOf(show) + 1));
                 System.out.println(jsonShow);

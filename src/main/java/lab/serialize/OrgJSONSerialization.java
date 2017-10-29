@@ -18,7 +18,7 @@ public class OrgJSONSerialization {
 
         for (TVShow show : tvShows) {
             JSONObject object = new JSONObject(show);
-            String jsonShow = object.toString();
+            String jsonShow = object.toString(4);
             json.add(jsonShow);
             System.out.println("TV Show #" + (tvShows.indexOf(show) + 1));
             System.out.println(jsonShow);

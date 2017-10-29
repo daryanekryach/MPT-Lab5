@@ -10,7 +10,7 @@ public class OrgJsonTest {
 
     @Test
     public void serialize(){
-        assertNotEquals(tvShows, OrgJSONSerialization.serialize(tvShows));
+        assertNotNull(OrgJSONSerialization.serialize(tvShows));
     }
 
     @Test

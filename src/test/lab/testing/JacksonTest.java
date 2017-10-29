@@ -6,6 +6,7 @@ import org.junit.*;
 import java.util.ArrayList;
 
 import static org.junit.Assert.assertNotEquals;
+import static org.junit.Assert.assertNotNull;
 
 public class JacksonTest {
 
@@ -13,7 +14,7 @@ public class JacksonTest {
 
     @Test
     public void serialize(){
-        assertNotEquals(tvShows, JacksonSerialization.serialize(tvShows));
+        assertNotNull(JacksonSerialization.serialize(tvShows));
     }
 
     @Test
